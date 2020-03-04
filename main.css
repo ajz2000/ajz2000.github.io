@@ -2,6 +2,8 @@ body {
   font-family: helvetica;
   color: rgb(11, 11, 12);
   background-color: rgb(250,250,250);
+  //background: linear-gradient(90deg, rgba(150,233,153,1) 0%, rgba(112,131,223,1) 100%);
+
 }
 
 h2 {
@@ -60,9 +62,43 @@ ul {
   color: rgb(50,168,96);
 }
 
+.grid-container {
+  display: grid;
+  grid-column-gap: 32px;
+  grid-row-gap: 8px;
+  align-items: center;
+  height: 320px;
+  width: 480px;
+  padding-left: 16px;
+}
+
+.grid-item {
+  height: 320px;
+  width: 240px;
+  background-color: rgb(245,245,245);
+  box-shadow: 4px 4px 4px 0px rgba(166,166,166,10);
+}
+
+#gridItem1 {
+  grid-row: 1;
+  grid-column: 1;
+}
+#gridItem2 {
+  grid-row: 1;
+  grid-column: 2;
+}
+#gridItem3 {
+  grid-row: 1;
+  grid-column: 3;
+}
+#gridItem4 {
+  grid-row: 1;
+  grid-column: 4;
+}
+
 #main {
   max-width: 500px;
-  margin-left: 160px;
+  //margin-left: 160px;
   margin-top: 80px;
   padding: 10px 10px;
 }
