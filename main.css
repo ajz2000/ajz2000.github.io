@@ -13,29 +13,9 @@ body {
 }
 
 h2 {
-  font-family: monospace;
-  color: rgb(210,204,161);
-}
-.topbar h1 {
-  color: rgb(50,168,96);
-  padding: 6px 16px;
+  font-family: RobotoLight;
 }
 
-ul {
-  font-family: monospace;
-}
-
-.sidenav {
-  height: 100%;
-  width: 160px;
-  position: fixed;
-  top: 160;
-  left: 0;
-  background-color: rgb(250,250,250);
-  outline-color: rgb(200, 200, 200);
-  outline-width: thin;
-  outline-style: solid;
-}
 .topbar {
   height: 80px;
   width: 100%;
@@ -48,25 +28,17 @@ ul {
   outline-style: solid;
   font-family: RobotoLight;
 }
+
 .topbar span {
   float: right;
   padding-right: 6px;
   padding-top: 16px
 }
+
 .topbar h1 {
   float: left;
-}
-.sidenav a {
-  padding: 6px 8px 6px 16px;
-  text-decoration: none;
-  font-size: 20px;
-  color: rgb(11, 11, 12);
-  display: block;
-  margin-top: 10px;
-}
-
-.sidenav a:hover {
   color: rgb(50,168,96);
+  padding: 0px 32px;
 }
 
 .grid-container {
@@ -79,12 +51,32 @@ ul {
   padding-left: 16px;
 }
 
+.grid-container a {
+  text-decoration: none;
+  color: rgb(80,80,80);
+  font-family: RobotoLight;
+}
+
 .grid-item {
   height: 320px;
   width: 240px;
   background-color: rgb(245,245,245);
   box-shadow: 4px 4px 4px 0px rgba(200,200,200,10);
   border-radius: 8px 8px 8px 8px;
+}
+
+.grid-item h2 {
+  font-size: 20px;
+  color: rgb(80,80,80);
+  font-family: RobotoLight;
+  padding-left: 16px;
+
+}
+.grid-item p {
+  color: rgb(60,60,60);
+  font-family: RobotoLight;
+  padding-left: 16px;
+
 }
 
 #gridItem1 {
@@ -104,7 +96,7 @@ ul {
   grid-column: 4;
 }
 
-#tempImg {
+.grid-item-image {
   width: 240px;
   height: 66%;
   object-fit: cover;
