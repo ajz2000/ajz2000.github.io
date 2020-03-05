@@ -1,6 +1,11 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <!-- Top Bar -->
+<head>
+  <html lang="en" dir="ltr">
+  <meta charset="utf-8">
+  <title>Aidan Zorbas</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
   <div id="myTopBar" class="topbar">
     <h1>Aidan Zorbas</h1>
     <span>
@@ -9,24 +14,55 @@
       </a>
     </span>
   </div>
-  <div id="main">
-    <head>
-      <meta charset="utf-8">
-      <title>Aidan Zorbas</title>
-      <link rel="stylesheet" href="main.css">
-    </head>
-  </div>
 
   <div id="mainBoxes" class="grid-container">
-    <a href="https://google.com">
+    <a id="gridItem1Anchor" href="aboutMe.html">
       <div id="gridItem1" class="grid-item">
-        <img id="aboutMe" class="grid-item-image" src="img/gradient.png" alt="tempimg">
+        <img id="aboutMe" class="grid-item-image" src="img/gradient.png" alt="about me">
         <h2>About Me</h2>
         <p>More about myself</p>
       </div>
     </a>
-    <div id="gridItem2" class="grid-item">Project 1</div>
-    <div id="gridItem3" class="grid-item">Project 2</div>
+
+    <a id="gridItem2Anchor" href="https://github.com/ajz2000/Slate">
+      <div id="gridItem2" class="grid-item">
+        <img id="slate" class="grid-item-image" src="img/slate.png" alt="slate">
+        <h2>Slate</h2>
+        <p>Minimal text editor in java</p>
+      </div>
+    </a>
+    <a id="gridItem3Anchor" href="https://github.com/ajz2000/Pomodoro">
+      <div id="gridItem3" class="grid-item">
+        <img id="pom" class="grid-item-image" src="img/pom.png" alt="pom">
+        <h2>Pom</h2>
+        <p>Pomodoro timer in java</p>
+      </div>
+    </a>
     <div id="gridItem4" class="grid-item">Resume</div>
+    <div id="aboutMeText" class="mouseOverText">
+        <h2>About Me</h2>
+        <p>I am a student persuing a degree in Computer Science from the University of Toronto, with a focus on Software Engineering.</p>
+        <p>Currently working as a software development intern at IBM's Markham, Ontario Location.</p>
+        <h2>Contact Me</h2>
+        <p>Personal Email: ajzorbas@gmail.com</p>
+        <p>Professional Email: Aidan.Zorbas@IBM.com</p>
+        <p>My Github: https://github.com/ajz2000</p>
+    </div>
+    <div id="slateText" class="mouseOverText">
+        <h2>Slate</h2>
+        <p>A minimal text editor built over the course of a few days.</p>
+        <p>Uses Java's AWT and Swing packages.</p>
+        <h2>Future Plans</h2>
+        <p>This project has largely fallen out of personal use, and as such is no longer being updated.</p>
+        <p>I am likely to rebuild it from scratch in a different language with more robust features (some form of markdown rendering, syntax highlighting) as a practice excercise.</p>
+    </div>
+    <div id="pomText" class="mouseOverText">
+        <h2>Pom</h2>
+        <p>A simple Pomodoro timer built over the course of an afternoon.</p>
+        <h2>Future Plans</h2>
+        <p>This project has largely fallen out of personal use, and as such is no longer being updated.</p>
+        <p>I have no intention of recreating or modifying this application further.</p>
+    </div>
   </div>
+</body>
 </html>
